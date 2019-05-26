@@ -31,6 +31,14 @@
             %a.nav-link{:href => "/exhibitions"} Exhibitions
           %li.nav-item
             %a.nav-link{:href => "/contact"} Contact
+    .container
+      .breadcrambs
+        - breadcrumbs.each.with_index(1) do |res, index|
+          = link_to res.url do
+            %span.breadcrambs_item
+              = res.url.gsub(/\//i, '').titlecase
+          - if index < breadcrumbs.size
+            >
     = yield
 
   = stylesheet_link_tag "site"

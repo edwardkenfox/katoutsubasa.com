@@ -10,7 +10,8 @@
 - [ ] metaタグ
 - [ ] robots.txt
 - [ ] humans.txt
-- [ ] パンくず
+- [x] パンくず
+- [ ] menuのhighlight
 
 ## refs
 

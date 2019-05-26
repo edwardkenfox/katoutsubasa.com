@@ -48,8 +48,8 @@ page '/*.txt', layout: false
 helpers do
   def breadcrumbs
     result = []
-    r = current_page.parent
-    while r
+    r = current_page
+    while r && r.url != '/'
       result.unshift(r)
       r = r.parent
     end
