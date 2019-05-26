@@ -2,6 +2,19 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #666;
 }
+blockquote {
+  border-left: 3px solid #ddd;
+  font-style: italic;
+  padding-left: 12px;
+  margin-left: 12px;
+}
+ul {
+  list-style: none;
+}
+hr {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 // .main {
 //   display: flex;
 //   align-items: center;
@@ -88,4 +101,55 @@ body {
 
 .description {
   font-size: 14px;
+}
+.statement-title {
+  font-weight: bold;
+}
+.section-title {
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+.section-title:not(:first-child) {
+  margin-top: 24px;
+}
+ul.section-list li {
+  line-height: 1.7em;
+}
+.section-year {
+  display: inline-block;
+  width: 72px;
+}
+.annotation {
+  font-size: 12px;
+}
+
+
+.exhibition-item {
+  margin-top: 12px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.exhibition-thumbnail img {
+  padding: 12px;
+  width: 200px;
+}
+.exhibition-details {
+  border-top: 1px solid #ddd;
+  padding: 12px;
+  margin-left: 36px;
+  width: 100%;
+}
+.exhibition-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+img.icon {
+  width: 64px;
 }

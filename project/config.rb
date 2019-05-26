@@ -44,3 +44,15 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+helpers do
+  def breadcrumbs
+    result = []
+    r = current_page.parent
+    while r
+      result.unshift(r)
+      r = r.parent
+    end
+    return result
+  end
+end
