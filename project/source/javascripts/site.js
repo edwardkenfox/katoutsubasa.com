@@ -10,6 +10,7 @@ makeLinkActive = () => {
       return
     }
   })
-
 }
-makeLinkActive();
+window.addEventListener('DOMContentLoaded', () => {
+  makeLinkActive();
+})
