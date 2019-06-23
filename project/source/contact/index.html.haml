@@ -1,9 +1,9 @@
-.container
+.container.contact
+  .row.mb-3
+  .row.mb-5
   .row.mb-5
     .col-1.col-md-1
     .col-10.col-md-10.description
-      %h5
-        Contact
       %form#ss-form{:_lpchecked => "1", :action => "https://docs.google.com/forms/d/1Mg51ePj_E0nwQERwBsINWmOYTnhU4ugH0uZNAvnf2o0/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
         %ol{:style => "padding-left: 0px;margin-left: 0px;"}
           .ss-form-question.errorbox-good
@@ -41,7 +41,6 @@
             .ss-item.ss-paragraph-text{:dir => "ltr"}
               .ss-form-entry
                 %label.ss-q-item-label{"aria-hidden" => "true", :for => "entry_378371330"}
-                  %br/
                   .ss-q-title
                     Message
                   .ss-q-help.ss-secondary-text{:dir => "ltr"}
@@ -52,12 +51,7 @@
           %input{:name => "fromEmail", :type => "hidden", :value => "false"}/
           %input{:name => "fbzx", :type => "hidden", :value => "6433230689562073407"}/
           .ss-item.ss-navigate
-            %table#navigation-table
-              %tbody
-                %tr
-                  %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
-                    %br/
-                    %input#ss-submit.btn.btn-default{:name => "submit", :type => "submit", :value => "Submit"}/
+            %input#ss-submit.btn.btn-submit{:name => "submit", :type => "submit", :value => "Submit"}/
 
     .col-1.col-md-1
   .row.mb-5
@@ -80,16 +74,15 @@
     .col-1.col-md-1
     .col-10.col-md-10.description
       %h5
-        Mailing list
+        Subscribe to our mailing list
       #mc_embed_signup{:style => "width:80%;"}
         %form#mc-embedded-subscribe-form.validate{:_lpchecked => "1", :action => "//katoutsubasa.us14.list-manage.com/subscribe/post?u=491378b089610bb28c2afcec3&id=09a1361475", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :style => "text-align:center;", :target => "_blank"}
           #mc_embed_signup_scroll
-            %label{:for => "mce-EMAIL"} Subscribe to our mailing list
-            %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "email address", :required => "", :style => "width:100%;", :type => "email", :value => ""}/
+            %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "email address", :required => "", :type => "email", :value => ""}/
             / real people should not fill this in and expect good things - do not remove this or risk form bot signups
             %div{"aria-hidden" => "true", :style => "position: absolute; left: -5000px;"}
               %input{:name => "b_491378b089610bb28c2afcec3_09a1361475", :tabindex => "-1", :type => "text", :value => ""}/
             .clear
-              %input#mc-embedded-subscribe.button{:name => "subscribe", :style => "margin-top:20px;", :type => "submit", :value => "Subscribe"}/
+              %input#mc-embedded-subscribe.btn.btn-submit{:name => "subscribe", :style => "margin-top:20px;", :type => "submit", :value => "Subscribe"}/
 
     .col-1.col-md-1

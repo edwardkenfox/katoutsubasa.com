@@ -15,19 +15,14 @@ hr {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-// .main {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100vw;
-//   height: 100vh;
-//   flex-direction: column;
-// }
 .image-container {
   position: relative;
 }
+.image-container.dark span {
+  color: #888;
+}
 .image-container span {
-  color: initial;
+  color: floralwhite;
   font-size: 36px;
   position: absolute;
   opacity: 0;
@@ -149,6 +144,7 @@ ul.section-list li {
   display: flex;
   justify-content: space-around;
   width: 50%;
+  padding-inline-start: initial;
 }
 img.icon {
   width: 64px;
@@ -165,4 +161,38 @@ img.icon {
 }
 .breadcrambs a {
   color: inherit;
+}
+
+.container.contact .ss-q-title {
+  width: 60px;
+}
+.container.contact .ss-form-entry {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+.container.contact .ss-form-question.errorbox-good:not(:first-child) {
+  margin-bottom: 8px;
+}
+.container.contact .col-10.col-md-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container.contact .ss-item.ss-navigate {
+  display: flex;
+  justify-content: center;
+}
+.container.contact .btn-submit {
+  border: 1px solid #999;
+  padding: 0px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.container.contact h5 {
+  margin-bottom: 24px;
+}
+.container.contact .email {
+  width: 50%;
 }
