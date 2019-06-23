@@ -49,6 +49,12 @@ helpers do
   def breadcrumbs
     result = []
     r = current_page
+
+    # Projects 配下のページだけパンくずリストを出すようにする
+    unless r.url.split("/").filter { |path| path != "" }.include?("projects")
+      return result
+    end
+
     while r && r.url != '/'
       result.unshift(r)
       r = r.parent
