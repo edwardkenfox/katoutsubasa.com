@@ -2,13 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #666;
 }
-a {
-  color: inherit;
-  text-decoration: underline;
-}
-a:hover {
-  color: inherit;
-}
 blockquote {
   border-left: 3px solid #ddd;
   font-style: italic;
@@ -159,4 +152,12 @@ ul.section-list li {
 }
 img.icon {
   width: 64px;
+}
+
+.exhibitions a {
+  color: inherit;
+  text-decoration: underline;
+}
+.exhibitions a {
+  color: inherit;
 }
