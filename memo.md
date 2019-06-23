@@ -2,17 +2,15 @@
 
 - [x] topページ
 - ~~[ ] topの動画のレイアウト調整とオーバーレイかける~~
-- [ ] /projects/ のテキストを左右中央に
-- [ ] ページ読み込み時にガクっとなるの直す
-  - [ ] bootstrap.js読み込まれるまでのDOMとそのあと
-- [ ] レイアウト調整
-- [ ] favicon
-- [ ] metaタグ
-- [ ] robots.txt
-- [ ] humans.txt
+- [x] /projects/ のテキストを左右中央に
+- [x] ページ読み込み時にガクっとなるの直す
+- [x] レイアウト調整
+- [x] favicon
+- [x] metaタグ
 - [x] パンくず
-- [ ] パンくずのレイアウト修正
-- [ ] menuのhighlight
+- [x] パンくずのレイアウト修正
+- [x] menuのhighlight
+- [ ] contactページのレイアウト修正
 
 ## refs
 
