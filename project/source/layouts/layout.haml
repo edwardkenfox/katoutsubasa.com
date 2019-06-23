@@ -16,7 +16,7 @@
     %meta{ property: "og:locale:alternate", content: "ja_jp" }
     %title
       Tsubasa Kato
-    %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet", async: true }
     %link{rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin: "anonymous"}
     %link{:href => "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css", :rel => "stylesheet", :defer => ""}
     = favicon_tag 'images/favicon.ico'
@@ -24,6 +24,8 @@
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", :defer => ""}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", :defer => ""}
     %script{:src => "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js", :defer => ""}
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
   %body.main
     %nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
       %a.navbar-brand{:href => "/"} Tsubasa Kato
@@ -50,6 +52,3 @@
           - if index < breadcrumbs.size
             >
     = yield
-
-  = stylesheet_link_tag "site"
-  = javascript_include_tag "site"
