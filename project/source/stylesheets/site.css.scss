@@ -108,11 +108,15 @@ hr {
   margin-top: 24px;
 }
 ul.section-list li {
-  line-height: 1.7em;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  line-height: 1.1;
 }
 .section-year {
   display: inline-block;
-  width: 72px;
+  min-width: 54px;
 }
 .annotation {
   font-size: 12px;
