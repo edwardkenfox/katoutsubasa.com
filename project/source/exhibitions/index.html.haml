@@ -1,4 +1,5 @@
-.container
+.container.exhibitions
+  .row.mb-5
   .row.mb-4
     .col-1.col-md-1
     .col-10.col-md-10.description
@@ -38,7 +39,7 @@
               %br
               National Museum of Modern and Contemporary Art, Gwacheon, South Korea
               %br
-              2017      
+              2017
         %li.exhibition-item
           .exhibition-thumbnail
             = image_tag 'exhibitions/11.jpg', class: 'thumbnail'
@@ -159,7 +160,7 @@
               Mori Art Museum, Tokyo, Japan
               %br
               2010
-                                                                                                                          
+
     .col-1.col-md-1
   .row.mb-4
     .col-1.col-md-1
@@ -169,22 +170,26 @@
       %ul.exhibition-list
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/14.jpg', class: 'thumbnail'
+            %a(href="https://www.realtokyo.co.jp/en/exhibition/domani-the-art-of-tomorrow-national-art-center-tokyo-2019-1-23-3-3/" target="_blank")
+              = image_tag 'exhibitions/bibliography/14.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              Real Tokyo  (online)
+              %a(href="https://www.realtokyo.co.jp/en/exhibition/domani-the-art-of-tomorrow-national-art-center-tokyo-2019-1-23-3-3/" target="_blank")
+                Real Tokyo  (online)
             .exhibition-description
-              “Domani: The Art of Tomorrow” [review] 
+              “Domani: The Art of Tomorrow” [review]
               %br
-              Emily Wakeling 
+              Emily Wakeling
               %br
               2019
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/13.jpg', class: 'thumbnail'
+            %a(href="https://www.cinra.net/interview/201901-katotsubasa" target="_blank")
+              = image_tag 'exhibitions/bibliography/13.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              CINRA.NET (online)
+              %a(href="https://www.cinra.net/interview/201901-katotsubasa" target="_blank")
+                CINRA.NET (online)
             .exhibition-description
               "Tsubasa Kato pulls down a building using ropes" [interview]
               %br
@@ -205,10 +210,12 @@
               2018 October
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/11.jpg', class: 'thumbnail'
+            %a(href="https://www.artforum.com/print/reviews/201804/tsubasa-kato-74713" target="_blank")
+              = image_tag 'exhibitions/bibliography/11.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              Artforum vol.56 no.8
+              %a(href="https://www.artforum.com/print/reviews/201804/tsubasa-kato-74713" target="_blank")
+                Artforum vol.56 no.8
             .exhibition-description
               "(Drawing) Fractions of the Longest Distance” [review]
               %br
@@ -222,17 +229,19 @@
             .exhibition-title
               Bungakukai
             .exhibition-description
-              “Memories simultaneously erupting across spatial and temporal distances” [essay] 
+              “Memories simultaneously erupting across spatial and temporal distances” [essay]
               %br
               Tsubasa Kato
               %br
               2016 January
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/08.jpg', class: 'thumbnail'
+            %a(href="https://ocula.com/magazine/conversations/tsubasa-kato/" target="_blank")
+              = image_tag 'exhibitions/bibliography/08.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              OCULA (online)
+              %a(href="https://ocula.com/magazine/conversations/tsubasa-kato/" target="_blank")
+                OCULA (online)
             .exhibition-description
               “A conversation with Tsubasa Kato” [interview]
               %br
@@ -253,10 +262,12 @@
               2015
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/06.jpg', class: 'thumbnail'
+            %a(href="https://www.youtube.com/watch?v=_rHO4xOpkdY" target="_blank")
+              = image_tag 'exhibitions/bibliography/06.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              Group Gendai
+              %a(href="https://www.youtube.com/watch?v=_rHO4xOpkdY" target="_blank")
+                Group Gendai
             .exhibition-description
               "Mitakuye Oyasin” [documentary film]
               %br
@@ -265,10 +276,12 @@
               2014
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/04.jpg', class: 'thumbnail'
+            %a(href="https://www.eyelinepublishing.com/eyeline-76/review/tsubasa-kato" target="_blank")
+              = image_tag 'exhibitions/bibliography/04.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              Eyeline (online)
+              %a(href="https://www.eyelinepublishing.com/eyeline-76/review/tsubasa-kato" target="_blank")
+                Eyeline (online)
             .exhibition-description
               “Fukagawa, Future, Humanity” [review]
               %br
@@ -277,10 +290,12 @@
               2011
         %li.exhibition-item
           .exhibition-thumbnail
-            = image_tag 'exhibitions/bibliography/03.jpg', class: 'thumbnail'
+            %a(href="http://www.nadiff-online.com/?pid=62635819" target="_blank")
+              = image_tag 'exhibitions/bibliography/03.jpg', class: 'thumbnail'
           .exhibition-details
             .exhibition-title
-              MUJIN-TO Production
+              %a(href="http://www.nadiff-online.com/?pid=62635819" target="_blank")
+                MUJIN-TO Production
             .exhibition-description
               “LOST HOME EMBANKMENT” [DVD]
               %br

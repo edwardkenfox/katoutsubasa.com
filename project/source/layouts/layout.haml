@@ -1,19 +1,31 @@
 !!!
 %html
   %head
-    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{charset: "utf-8"}/
     %meta{content: "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
-    %title= current_page.data.title || "Middleman"
-    %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet"}
+    %meta{ name: "description", content: "Tsubasa Kato's website" }
+    %meta{ charset: "utf-8" }
+    %meta{ property: "og:url", content: "http://www.katoutsubasa.com/" }
+    %meta{ property: "og:title", content: "Tsubasa Kato" }
+    %meta{ property: "og:description", content: "Tsubasa Kato's website" }
+    %meta{ property: "og:image", content: "http://katoutsubasa.com/images/projects/pull-and-raise/grid-like-structure/break-it-before-its-broken/02.jpg" }
+    %meta{ property: "og:type", content: "website" }
+    %meta{ property: "og:locale", content: "en_us" }
+    %meta{ property: "og:locale:alternate", content: "ja_jp" }
+    %title
+      Tsubasa Kato
+    %link{href: "https://fonts.googleapis.com/css?family=Jaldi&display=swap", rel: "stylesheet" }
     %link{rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin: "anonymous"}
     %link{:href => "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css", :rel => "stylesheet", :defer => ""}
+    = favicon_tag 'images/favicon.ico'
     %script{:crossorigin => "anonymous", :integrity => "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", :src => "https://code.jquery.com/jquery-3.3.1.slim.min.js", :defer => ""}
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", :defer => ""}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", :defer => ""}
     %script{:src => "https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js", :defer => ""}
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
   %body.main
     %nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
       %a.navbar-brand{:href => "/"} Tsubasa Kato
@@ -21,7 +33,7 @@
         %span.navbar-toggler-icon
       #navbarNavDropdown.collapse.navbar-collapse
         %ul.navbar-nav
-          %li.nav-item.active
+          %li.nav-item
             %a.nav-link{:href => "/projects"} Projects
           %li.nav-item
             %a.nav-link{:href => "/cv"} CV
@@ -36,10 +48,7 @@
         - breadcrumbs.each.with_index(1) do |res, index|
           = link_to res.url do
             %span.breadcrambs_item
-              = res.url.gsub(/\//i, '').titlecase
+              = res.url.split('/')[index].gsub(/\//i, '').titlecase
           - if index < breadcrumbs.size
             >
     = yield
-
-  = stylesheet_link_tag "site"
-  = javascript_include_tag "site"
