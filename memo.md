@@ -11,6 +11,7 @@
 - [ ] robots.txt
 - [ ] humans.txt
 - [x] パンくず
+- [ ] パンくずのレイアウト修正
 - [ ] menuのhighlight
 
 ## refs
