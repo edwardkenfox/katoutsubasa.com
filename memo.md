@@ -11,7 +11,7 @@
 - [x] パンくずのレイアウト修正
 - [x] menuのhighlight
 - [ ] contactページのレイアウト修正
-- [ ] exhibitions のレイアウトがなぜか縮小されている
+- [x] exhibitions のレイアウトがなぜか縮小されている
 - [ ] cv の年号の部分の折返し
 
 ## refs

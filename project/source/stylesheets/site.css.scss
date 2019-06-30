@@ -200,3 +200,18 @@ img.icon {
 .container.contact .email {
   width: 50%;
 }
+
+
+@media (max-width: 576px) {
+  .container.exhibitions .exhibition-list {
+    padding-left: 0;
+  }
+  .container.exhibitions .exhibition-item {
+    flex-direction: column;
+  }
+  .container.exhibitions .exhibition-details {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    margin-left: 0;
+  }
+}
