@@ -12,7 +12,7 @@
 - [x] menuのhighlight
 - [ ] contactページのレイアウト修正
 - [x] exhibitions のレイアウトがなぜか縮小されている
-- [ ] cv の年号の部分の折返し
+- [x] cv の年号の部分の折返し
 
 ## refs
 
